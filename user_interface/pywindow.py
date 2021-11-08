@@ -1,11 +1,10 @@
 import threading
 import wave
 import requests
-# from chat import get_response, bot_name
 import pyaudio
 from emoji import emojize
 from tkinter import *
-import nlp
+
 
 BT_COLOR = "#e2e9b2"
 TEXT_COLOR = "#17202A"

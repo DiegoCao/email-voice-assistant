@@ -1,0 +1,12 @@
+User: please show me the email
+SHOWSubject   : Test Email from ZXJ
+From      : Xingjian Zhang <jimmyzxj@umich.edu>
+To        : voicemail.linguai@gmail.com
+Time      : Wed, 27 Oct 2021 22:50:30 GMT
+Body      : 
+TEST
+TESTING
+ᐧ
+
+--------------------
+What can I do for you?

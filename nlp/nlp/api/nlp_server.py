@@ -12,9 +12,6 @@ from pathlib import Path
 from tkinter import *
 import logging
 
-
-
-
 fp = open('log.txt', 'w')
 
 @nlp.app.route('/', methods=["GET"])
@@ -26,13 +23,11 @@ def base():
 def parse_voice():
     fp = open('log.txt', 'a')
     voice_file = request.files["voice"]
-    voice_file.save("test.mp3")
+    '''voice_file.save("test.mp3")
     sound = AudioSegment.from_mp3("test.mp3")
-    sound.export("test.wav", format="wav")
-
+    sound.export("test.wav", format="wav")'''
     # 1. speech 2 text
-    user_text = _speech_to_text("test.wav")
-
+    user_text = _speech_to_text(voice_file)
     # TODO: Ambiguity Regex Match!
     user_text = user_text.replace("*", "star") #FIX ME!!!
     user_text = user_text.replace("start", "star")
