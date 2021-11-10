@@ -1,64 +1,67 @@
 .App {
-  display: flex;
   text-align: center;
   width: 100vw;
-  height: 100vh;
   color: #00274C;
   background-color: white;
+  overflow-x: hidden;
 }
 
 .container {
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   height: 100%;
-  position: relative;
 }
 
 .nav-bar {
   display: flex;
   flex-flow: row-reverse;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
+  width: 60%;
   height: 60px;
-  border-bottom: solid #00274C 1.5px;
+  border-bottom: solid #00274C 2px;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 60px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .nav-text {
-  height: 60px;
-  line-height: 60px;
-  font-size: 25px;
+  height: 45px;
+  line-height: 50px;
+  font-size: 20px;
   font-weight: bold;
   padding-left: 15px;
 }
 
 .header {
   display: block;
-  font-size: 50px;
-  padding-top: 50px;
-  padding-bottom: 70px;
+  font-size: 27px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
 }
 
 .instruction {
   display: block;
   font-size: 30px;
-  /* margin-top: 100px; */
 }
 
-.record-listen {
-  display: flex;
-  width: 30%;
-  height: 50px;
-  padding-top: 20px;
-  justify-content: space-around;
+.chat-box-container {
+  width: 500px;
+  height: 600px;
+  padding-bottom: 50px;
 }
 
 .foot {
   display: flex;
   width: 100%;
   height: 50px;
-  position: absolute;
   background-color: #00274C;
+  position: absolute;
   bottom: 0;
+  /* margin-top: 20px; */
 }
