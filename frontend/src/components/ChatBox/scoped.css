@@ -1,10 +1,11 @@
 .chat-box-div {
     width: 500px;
     height: 600px;
-    border: solid 1px #00274C;
-    background-color: #00274C;
-    border-radius: 5%;
+    border: solid 1px #ffffff;
+    background-color: #ffffff8c;
+    border-radius: 2%;
     font-family: Sans-serif;
+    box-shadow: 3px 10px 10px 10px #00000009;
 }
 
 .chat-box {
@@ -26,8 +27,8 @@
 }
 
 .assistant-avatar {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
     background-color: #FFFFFF;
     margin-right: 7px;
@@ -37,9 +38,11 @@
     width: auto;
     height: auto;
     max-width: 80%;
-    background-color: #FFFFFF;
-    border-radius: 8px 8px 8px 0px;
-    padding: 7px;
+    color: black;
+    background-color: #e7e7e7;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.116);
+    border-radius: 0px 8px 8px 8px;
+    padding: 12px;
     line-height: 100%;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -54,8 +57,8 @@
 }
 
 .user-avatar {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
     background-color: #FFFFFF;
     margin-left: 7px;
@@ -65,9 +68,11 @@
     width: auto;
     height: auto;
     max-width: 80%;
-    background-color: #FFFFFF;
-    border-radius: 8px 8px 0px 8px;
-    padding: 7px;
+    color: white;
+    background-color: #00274C;
+    border-radius: 8px 0px 8px 8px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.116);
+    padding: 12px;
     line-height: 100%;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -86,14 +91,21 @@
     display: block;
     padding-top: 5px;
     text-align: center;
-    border: solid 1px #00274C;
-    border-radius: 20%;
-    background-color: #FFCB05;
-    color: #00274C;
+    /* border: solid 1px #00274C; */
+    border-radius: 50%;
+    background-color: #002b53ed;
+    color: #00274c00;  /*remove logo later - TODO*/
     width: 50px;
     height: 45px;
     font-size: 10px;
     font-weight: bold;
+    transition: ease-in-out 0.2s;
+}
+
+.mic-box:hover {
+    background-color: rgba(194, 194, 2, 0.555);
+    color: white;  /*remove logo later - TODO*/
+
 }
 
 audio {

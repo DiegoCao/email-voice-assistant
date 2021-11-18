@@ -44,12 +44,45 @@ $ ./bin/debug_nlp  # debug on
 
 ## Frontend
 ### Set up frontend dependencies
-For local test, require node>=14.0.0 and npm>=5.6
+For local test, require `node>=15.0.0` (we recommend 15.0.1) and `npm>=5.6`.
+
+#### node
+To install `node` with the latest version, we need `nvm` (Node Version Manager) on Ubuntu.
+```
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+# restart bash
+```
+You can verify that `nvm` is installed by calling
+```
+$ nvm --version
+```
+Then, to install node, you can call
+```
+$ nvm install 15.0.1
+```
+To verify version of `node`, you can call
+```
+$ node -v
+```
+
+#### npm and yarn
+Then we call install `npm` by
+```
+$ sudo apt install npm
+```
+Then we set up `yarn` using `npm`
+```
+$ cd frontend
+$ npm install --global yarn
+```
+
+#### Build the app
+After that, we can build the app
 ```
 $ cd frontend
 $ yarn install
 ```
-### Run frontend module
+#### Run frontend module
 ```
 $ yarn start
 ```

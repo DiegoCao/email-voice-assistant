@@ -20,9 +20,6 @@ setup(
         'pylint',
         'pytest',
         'requests',
-        'SpeechRecognition',
-        'gtts',
-        'pydub'
     ],
     python_requires='>=3.6',
 )

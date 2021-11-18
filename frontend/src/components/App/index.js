@@ -9,8 +9,8 @@ const App = () => {
     < div className="App" >
       < div className="container" >
         <div className="nav-bar">
-          <img style={{height:50,paddingRight:15}} src={VoicEmail} alt="voicemail"></img>
-          LinguAI - VoicEmail Assistant
+          {/* <img style={{height:50,paddingRight:15}} src={VoicEmail} alt="voicemail"></img> */}
+          {/* VoicEmail */}
           <div className="nav-text"></div>
         </div>
         <div className="chat-box-container">

@@ -2,8 +2,9 @@
   text-align: center;
   width: 100vw;
   color: #00274C;
-  background-color: white;
+  background-image: linear-gradient(to bottom right, rgba(194, 194, 2, 0.342), #002242b6);
   overflow-x: hidden;
+  height: 100vh;
 }
 
 .container {
@@ -21,7 +22,7 @@
   justify-content: center;
   width: 60%;
   height: 60px;
-  border-bottom: solid #00274C 2px;
+  /* border-bottom: solid #00274C 2px; */
   font-size: 27px;
   font-weight: bold;
   line-height: 60px;
