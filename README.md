@@ -1,6 +1,12 @@
 # email-voice-assistant
 Awesome web voice assistant for email. Course project of EECS 498-006 FA21@umich
 
+# Run
+```
+$ python bin/run_all.py
+$ python bin/run_all.py --debug
+```
+
 ## Backend
 ### Set up backend module
 Recommend python3.7+

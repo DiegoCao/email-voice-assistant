@@ -763,6 +763,13 @@ def recent(maxResults=25, userId="me"):
     return search("label:INBOX", maxResults, userId)
 
 
+def recentMessage(maxResults=25, userId="me"):
+    """Return a list of ``GmailMessage`` objects for the most recent emails. Essentially a wrapper for ``search()``.
+
+    First index is the most recent."""
+    return searchMessages("label:INBOX", maxResults, userId)
+
+
 def unread(maxResults=25, userId="me"):
     """Return a list of ``GmailThread`` objects for unread emails. Essentially a wrapper for ``search()``."""
     return search("label:UNREAD", maxResults, userId)
@@ -901,8 +908,17 @@ def get(email_id):
     try:
         m = GmailMessage(SERVICE_GMAIL.users().messages().get(userId="me", id=email_id).execute())
     except Exception:
-        raise IndexError("Please use absolute index in the raw message.")
+        raise IndexError("Given index is invalid. Please use absolute index in the raw message.")
     return m
+
+
+def getIdList(maxResults=999):
+    """Return a list of id of recent messages. 
+    
+    The first is the most recent one."""
+    results = recentMessage(maxResults=maxResults)
+    idx_list = [m.id for m in results]
+    return idx_list
 
     
 init(_raiseException=False)

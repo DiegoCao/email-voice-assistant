@@ -13,7 +13,7 @@ BG_GRAY = "#b6d6d2"
 FONT = "Helvetica 14"
 FONT_BOLD = "Helvetica 13 bold"
 
-NLP_SERVER_PORT = 5000
+NLP_SERVER_PORT = 3001
 
 def reset_tabstop(event):
     event.widget.configure(tabs=(event.width - 30, "right"))

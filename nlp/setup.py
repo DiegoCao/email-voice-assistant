@@ -20,6 +20,7 @@ setup(
         'pylint',
         'pytest',
         'requests',
+        'google-cloud-dialogflow'
     ],
     python_requires='>=3.6',
 )
