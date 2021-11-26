@@ -88,8 +88,9 @@ def _command(email_id, command, args={}):
             m.trash()
         elif command == 'forward':
             f = open("name_dict.json")
+            print("f is ")
             data = json.load(f)
-            reciuser = data[f]
+            reciuser = "hangrui@umich.edu"
             m.forward(recipient=reciuser)  # We can add additional forward message
             
     else:
