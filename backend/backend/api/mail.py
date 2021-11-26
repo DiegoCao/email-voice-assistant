@@ -1,6 +1,8 @@
 import flask
 from flask import request
 import backend
+import json
+from backend.backend.ezgmail import recent
 import backend.ezgmail as ezgmail
 
 
@@ -85,7 +87,11 @@ def _command(email_id, command, args={}):
         elif command == 'delete':
             m.trash()
         elif command == 'forward':
-            m.forward(args["recipient"])  # We can add additional forward message
+            f = open("name_dict.json")
+            data = json.load(f)
+            reciuser = data[f]
+            m.forward(recipient=reciuser)  # We can add additional forward message
+            
     else:
         # Query (for now)
         if command == "search":
@@ -110,6 +116,7 @@ def _command(email_id, command, args={}):
             else:
                 raise IndexError("No message at all.")
             m = ezgmail.get(lastest_email_id)
+
         if isinstance(m, list):
             email_list = m
         else:
